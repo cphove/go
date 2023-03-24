@@ -1,0 +1,7 @@
+FROM agent:latest AS agent
+
+FROM python:latest
+EXPOSE 8080
+COPY --from=agent /app/main agent
+WORKDIR /app
+CMD [ "./../agent" ]
