@@ -29,7 +29,7 @@ curl http://localhost:8080/run --include --header "Content-Type: application/jso
 
 If you have python installed on your computer, you will see the following:
 
-```json
+```
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 Date: Fri, 24 Mar 2023 08:39:48 GMT
