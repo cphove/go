@@ -3,4 +3,4 @@ Sets of go demos. ovo!
 
 ## catalog
 
-- [agent](./agent/README.md): a demo using Gin to run command.
+- [agent](./agent/): a demo using Gin to run command.
