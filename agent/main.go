@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"os"
 	"os/exec"
+
+	"github.com/gin-gonic/gin"
 )
 
 type result struct {
@@ -26,7 +27,7 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
-	router.Run(fmt.Sprintf("localhost:%s", port))
+	router.Run(fmt.Sprintf("0.0.0.0:%s", port))
 }
 
 func runCommand(c *gin.Context) {
